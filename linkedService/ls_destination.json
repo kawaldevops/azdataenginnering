@@ -1,0 +1,18 @@
+{
+	"name": "ls_destination",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "dev-secret",
+				"secretVersion": "abecf22223b44a338506e8a4447ffec8"
+			}
+		}
+	}
+}
