@@ -1,0 +1,24 @@
+{
+	"name": "trg_schdule",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_filter",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 24,
+				"startTime": "2025-08-25T09:00:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
