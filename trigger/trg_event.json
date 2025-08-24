@@ -1,0 +1,24 @@
+{
+	"name": "trg_event",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_filter",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/source/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/12a0b959-db08-4c28-b6ea-4a767722fbe5/resourceGroups/leanringproject_dev_resources/providers/Microsoft.Storage/storageAccounts/stoacctdevresrc",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
